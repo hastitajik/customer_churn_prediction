@@ -46,7 +46,7 @@
 > `docs/img/dashboard-overview.png`  
 > `docs/img/peak-hours.png`  
 
-(بعد از ساخت داشبورد، اسکرین‌شات‌ها را اینجا اضافه کنید.)
+(بعد از ساخت داشبورد، اسکرین‌شات‌ها را اینجا اضافه میشه.)
 
 ---
 
@@ -54,7 +54,7 @@
 - منبع: *Household Power Consumption* (Kaggle) یا دیتای مشابه سری زمانی خانگی.  
 - ستون‌های کلیدی: `datetime`, `consumption_kwh`, `voltage`, `sub_metering_*`, (اختیاری) `temperature`, `humidity`.
 
-> فایل خام را در `data/raw/` قرار دهید.  
+> فایل خام را در `data/raw/` قرار میگیره.  
 > فایل تمیز شده در `data/processed/`.
 
 ---
@@ -68,3 +68,30 @@ C --> D[Model Training & Forecasts]
 D --> B
 B --> E[Power BI Dashboards]
 
+
+## ساختار پروژه
+.
+├─ data/
+│  ├─ raw/
+│  └─ processed/
+├─ src/
+│  ├─ sql/
+│  │  ├─ schema.sql
+│  │  ├─ load.sql
+│  │  ├─ cleaning.sql
+│  │  └─ marts.sql
+│  ├─ python/
+│  │  ├─ etl.py
+│  │  ├─ eda.py
+│  │  ├─ features.py
+│  │  ├─ model.py
+│  │  └─ utils.py
+├─ models/
+│  └─ energy_forecast.pkl
+├─ dashboard/
+│  └─ powerbi.pbix
+├─ docs/
+│  └─ img/
+├─ .env.example
+├─ requirements.txt
+└─ README.md
