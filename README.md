@@ -6,7 +6,7 @@
 [![Power BI](https://img.shields.io/badge/PowerBI-Dashboard-yellow)]()
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)]()
 
-> تحلیل و پیش‌بینی مصرف برق خانگی با SQL + Python + Power BI. هدف: ارائه اینسایت عملی برای کاهش ~۳۰٪ هزینه انرژی.
+> تحلیل و پیش‌بینی مصرف برق خانگی با SQL + Python + Power BI
 
 ---
 
