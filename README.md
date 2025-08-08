@@ -4,7 +4,7 @@
 [![Python](https://img.shields.io/badge/Python-3.10+-blue)]()
 [![SQL](https://img.shields.io/badge/SQL-PostgreSQL-informational)]()
 [![Power BI](https://img.shields.io/badge/PowerBI-Dashboard-yellow)]()
-[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)]()
+
 
 > تحلیل و پیش‌بینی مصرف برق خانگی با SQL + Python + Power BI
 
@@ -34,12 +34,12 @@
 - **راه‌حل:** تحلیل سری زمانی + اینسایت عملی + پیش‌بینی کوتاه‌مدت.
 - **Tech Stack:** SQL برای ذخیره و آماده‌سازی، Python برای ETL/Modeling، Power BI برای تصمیم‌سازی.
 
-**Hypothesis:** با شناسایی ساعات پیک و رفتارهای فصلی می‌توان ~۳۰٪ هزینه را کاهش داد (زمان‌بندی مصرف، بهینه‌سازی دستگاه‌ها، آگاهی‌بخشی).
+**Hypothesis:**   با شناسایی ساعات پیک و رفتارهای فصلی می‌توان ~۳۰٪ هزینه را کاهش داد (زمان‌بندی مصرف، بهینه‌سازی دستگاه‌ها، آگاهی‌بخشی).
 
 ---
 
 ## دمو و خروجی‌ها
-- داشبورد Power BI با KPIها، روند روز/هفته/ماه، ساعات پیک، و پیش‌بینی ۱۴ روزه.
+- داشبورد Power BI با KPIها، روند روز/هفته/ماه، ساعات پیک، و پیش‌بینی 30 روزه.
 - جدول پیشنهادهای عملی کاهش مصرف.
 
 > Screenshots / GIF ها  
