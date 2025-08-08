@@ -1,5 +1,5 @@
 
-# Home Energy Analytics — کاهش قبض برق با تحلیل داده‌های هوشمند
+# Home Energy Analytics — کاهش قبض برق با تحلیل داده‌
 
 [![Python](https://img.shields.io/badge/Python-3.10+-blue)]()
 [![SQL](https://img.shields.io/badge/SQL-PostgreSQL-informational)]()
