@@ -10,15 +10,13 @@
 - **راه‌حل:** تحلیل سری زمانی + اینسایت عملی + پیش‌بینی کوتاه‌مدت.
 - **فرضیه:** با شناسایی ساعات پیک و رفتارهای فصلی می‌توان هزینه را کاهش داد. (زمان‌بندی مصرف، بهینه‌سازی دستگاه‌ها، آگاهی‌بخشی)
 
-```markdown
+markdown
 # 🏠 Energy Usage Optimization — 30% Bill Reduction via Data Analytics
 
 ## Overview
 Analyze household electricity consumption to identify peak usage patterns, estimate costs, and simulate scenarios to reduce bills by up to **30%** using SQL Server, Python, and Power BI.
 
 ## Project Structure
-```
-
 energy-optimization/
 ├─ data/
 │  ├─ raw/
@@ -40,7 +38,6 @@ energy-optimization/
 │  └─ dashboard.pbix
 ├─ README.md
 
-````
 
 ## Tools & Technologies
 - SQL Server (SSMS)
@@ -69,15 +66,6 @@ energy-optimization/
 - Python 3.9+
 - Power BI Desktop
 
-### Installation
-```bash
-git clone https://github.com/your-username/energy-optimization.git
-cd energy-optimization
-python -m venv .venv
-source .venv/bin/activate  # Windows: .venv\Scripts\activate
-pip install -r requirements.txt
-````
-
 ## Execution
 
 1. Place dataset in `data/raw/`
@@ -94,8 +82,6 @@ Educational and portfolio use only.
 
 Your Name — [LinkedIn]([https://www.linkedin.com/](https://www.linkedin.com/in/hasti-tajik-b93b1b244)) | [Medium]([https://medium.com/](https://medium.com/me/settings/account))
 
-```
-```
 
 
 ## معماری
