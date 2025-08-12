@@ -21,4 +21,23 @@ C --> D[Model Training & Forecasts]
 D --> B
 B --> E[Power BI Dashboards]
 
+energy-optimization/
+├─ data/
+│  ├─ raw/           # فایل خام مصرف انرژی
+│  ├─ processed/     # خروجی‌های تمیز SQL/Python
+├─ sql/
+│  ├─ staging/       # کوئری‌های استیجینگ
+│  ├─ warehouse/     # مدل ستاره‌ای
+│  ├─ views/         # KPI Views
+├─ python/
+│  ├─ config.yaml    # مسیرها، پارامترها، تعرفه‌ها
+│  ├─ features.py    # ساخت فیچرها
+│  ├─ scenarios.py   # سناریوسازی کاهش مصرف
+├─ notebooks/
+│  ├─ 01_eda.ipynb   # تحلیل اکتشافی
+├─ reports/
+│  ├─ figures/       # نمودارها برای مقاله Medium
+├─ powerbi/
+│  └─ dashboard.pbix
+├─ README.md
 
