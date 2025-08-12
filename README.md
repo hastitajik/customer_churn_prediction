@@ -10,141 +10,91 @@
 - **راه‌حل:** تحلیل سری زمانی + اینسایت عملی + پیش‌بینی کوتاه‌مدت.
 - **فرضیه:** با شناسایی ساعات پیک و رفتارهای فصلی می‌توان هزینه را کاهش داد. (زمان‌بندی مصرف، بهینه‌سازی دستگاه‌ها، آگاهی‌بخشی)
 
-
----
-حق داری 😄
-چون وسطش خواستم هم توضیح متنی بدم هم ساختار رو، ولی اگه هدفت اینه که کپی‌ـپیست مستقیم توی `README.md` کنی و تمیز باشه، باید **کلش رو Markdown کامل** بدم که مستقیم تو گیت بخوابه و استایلش حفظ بشه.
-
-الان همون متن رو کامل به فرمت Markdown خالص میدم، بدون متن توضیح اضافه من، که مستقیم قابل استفاده باشه:
-
----
-
 ```markdown
 # 🏠 Energy Usage Optimization — 30% Bill Reduction via Data Analytics
 
-## 📌 Overview
-This project analyzes household electricity consumption data to identify peak usage patterns, estimate costs, and simulate scenarios for reducing energy bills by up to **30%**.  
-The workflow integrates **SQL Server**, **Python**, and **Power BI** to deliver a reproducible, end-to-end analytics solution.
+## Overview
+Analyze household electricity consumption to identify peak usage patterns, estimate costs, and simulate scenarios to reduce bills by up to **30%** using SQL Server, Python, and Power BI.
 
----
-
-## 🗂 Project Structure
+## Project Structure
 ```
 
 energy-optimization/
 ├─ data/
-│  ├─ raw/           # Original dataset (no modifications)
-│  ├─ processed/     # Cleaned & transformed outputs
+│  ├─ raw/
+│  ├─ processed/
 ├─ sql/
-│  ├─ staging/       # Staging queries for cleaning and standardizing data
-│  ├─ warehouse/     # Star schema tables (Fact & Dimensions)
-│  ├─ views/         # Analytical views & KPI queries
+│  ├─ staging/
+│  ├─ warehouse/
+│  ├─ views/
 ├─ src/
-│  ├─ config.yaml    # Paths, tariffs, parameters
-│  ├─ features.py    # Feature engineering scripts
-│  ├─ scenarios.py   # Scenario simulation scripts
+│  ├─ config.yaml
+│  ├─ features.py
+│  ├─ scenarios.py
 ├─ notebooks/
-│  ├─ 01\_eda.ipynb   # Exploratory data analysis
+│  ├─ 01\_eda.ipynb
 ├─ reports/
-│  ├─ figures/       # Charts for Medium article & documentation
-│  ├─ assumptions.md # Project assumptions (tariffs, baseload definition, etc.)
+│  ├─ figures/
+│  ├─ assumptions.md
 ├─ powerbi/
-│  └─ dashboard.pbix # Final interactive dashboard
+│  └─ dashboard.pbix
 ├─ README.md
 
 ````
 
----
+## Tools & Technologies
+- SQL Server (SSMS)
+- Python (PyCharm)
+- Power BI
+- GitHub
 
-## 🛠 Tools & Technologies
-- **SQL Server (SSMS)** — Data staging, cleaning, and star schema modeling
-- **Python (PyCharm)** — EDA, feature engineering, scenario simulation
-- **Power BI** — Interactive dashboard with What-If analysis
-- **GitHub** — Version control and documentation
+## Workflow
+1. Data ingestion & staging in SQL
+2. Data modeling in SQL
+3. Feature engineering & scenario simulation in Python
+4. Visualization in Power BI
 
----
+## Data Source
+- Dataset: [Link to dataset]
+- Columns: timestamp, household_id, kWh, device/channel usage, tariff (if available)
 
-## 📊 Workflow Overview
-1. **Data Ingestion & Staging (SQL)**  
-   Load raw CSV into SQL Server, clean & standardize timestamps, remove duplicates, and validate data quality.
-   
-2. **Data Modeling (SQL)**  
-   Create a star schema with fact and dimension tables, including tariff mapping and time dimensions.
+## Scenarios
+1. Baseload reduction
+2. Peak-to-off-peak shifting
+3. Peak shaving
 
-3. **Feature Engineering & Analysis (Python)**  
-   Build features like `kWh_total`, `kWh_peak`, `%peak_share`, and `baseload_kW`.  
-   Run segmentation and simulate scenarios to estimate savings.
-
-4. **Visualization & Simulation (Power BI)**  
-   Connect to SQL views and Python outputs, create KPIs, and design interactive dashboards with What-If parameters.
-
----
-
-## 📂 Data Source
-- **Dataset:** [Household Electric Power Consumption Dataset](https://www.kaggle.com/) *(replace with actual link)*  
-- **Columns:** timestamp, household_id, kWh, channel/device usage, tariff (if available)
-
----
-
-## ⚡ Scenarios Modeled
-1. **Baseload Reduction** — e.g., turning off standby appliances at night.
-2. **Peak-to-Off-Peak Shifting** — moving high-consumption appliances to cheaper hours.
-3. **Peak Shaving** — limiting usage during the most expensive tariff periods.
-
----
-
-## 🚀 Getting Started
+## Getting Started
 ### Prerequisites
 - SQL Server & SSMS
-- Python 3.9+ with `pip`
+- Python 3.9+
 - Power BI Desktop
 
 ### Installation
 ```bash
-# Clone the repository
 git clone https://github.com/your-username/energy-optimization.git
 cd energy-optimization
-
-# Create a Python virtual environment
 python -m venv .venv
-source .venv/bin/activate   # (Windows: .venv\Scripts\activate)
-
-# Install dependencies
+source .venv/bin/activate  # Windows: .venv\Scripts\activate
 pip install -r requirements.txt
 ````
 
----
+## Execution
 
-## 📌 Execution Steps
+1. Place dataset in `data/raw/`
+2. Run SQL scripts (staging → warehouse → views)
+3. Run Python scripts (features, scenarios)
+4. Open Power BI file and refresh connections
+5. Explore scenarios with What-If sliders
 
-1. **Load** the dataset into `data/raw/`
-2. **Run** SQL staging scripts → warehouse scripts → view scripts
-3. **Execute** Python scripts for features and scenarios
-4. **Open** Power BI file and refresh connections
-5. **Explore** scenarios with What-If sliders
+## License
 
----
+Educational and portfolio use only.
 
-## 📄 License
+## Author
 
-This project is for educational and portfolio purposes only.
-Data sources remain the property of their respective owners.
-
----
-
-## ✍ Author
-
-Your Name — [LinkedIn](https://www.linkedin.com/) | [Medium](https://medium.com/)
+Your Name — [LinkedIn]([https://www.linkedin.com/](https://www.linkedin.com/in/hasti-tajik-b93b1b244)) | [Medium]([https://medium.com/](https://medium.com/me/settings/account))
 
 ```
-
----
-
-این الان Markdown کامل و آماده‌ی `README.md` هست، حتی ساختار فولدر رو هم با code block گذاشتم که گیت درست نمایش بده.  
-
-اگر بخوای، می‌تونم **یک نسخه‌ی دیگه همین README رو به فارسی** هم برات درست کنم که وقتی پروژه رو برای مقاله Medium میذاری، فارسی‌زبان‌ها هم راحت‌تر بخونن.  
-
-میخوای همین رو هم برات بزنم؟
 ```
 
 
