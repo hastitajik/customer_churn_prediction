@@ -1,42 +1,16 @@
 
 # Home Energy Analytics — کاهش قبض برق با تحلیل داده‌
 
-[![Python](https://img.shields.io/badge/Python-3.10+-blue)]()
-[![SQL](https://img.shields.io/badge/SQL-PostgreSQL-informational)]()
-[![Power BI](https://img.shields.io/badge/PowerBI-Dashboard-yellow)]()
-
 
 > تحلیل و پیش‌بینی مصرف برق خانگی با SQL + Python + Power BI
+> 
 
----
+پاکسازی داده‌ها و ساخت یک دیتابیس تمیز (SQL Server)
 
-- **مسئله:** قبض برق خانگی بالاست، الگوی مصرف شفاف نیست.
-- **راه‌حل:** تحلیل سری زمانی + اینسایت عملی + پیش‌بینی کوتاه‌مدت.
-- **فرضیه:** با شناسایی ساعات پیک و رفتارهای فصلی می‌توان هزینه را کاهش داد. (زمان‌بندی مصرف، بهینه‌سازی دستگاه‌ها، آگاهی‌بخشی)
+تحلیل الگوها و شبیه‌سازی سناریوهای کاهش مصرف (Python)
 
+ساخت داشبورد مدیریتی با قابلیت تغییر پارامترها و دیدن اثر روی قبض برق (Power BI)
 
----
-
-## دمو و خروجی‌ها
-- داشبورد Power BI با KPIها، روند روز/هفته/ماه، ساعات پیک، و پیش‌بینی 30 روزه.
-- جدول پیشنهادهای عملی کاهش مصرف.
-
-> Screenshots / GIF ها  
-> `docs/img/dashboard-overview.png`  
-> `docs/img/peak-hours.png`  
-
-(بعد از ساخت داشبورد، اسکرین‌شات‌ها را اینجا اضافه میشه.)
-
----
-
-## دیتاست
-- منبع: *Household Power Consumption* (Kaggle) یا دیتای مشابه سری زمانی خانگی.  
-- ستون‌های کلیدی: `datetime`, `consumption_kwh`, `voltage`, `sub_metering_*`, (اختیاری) `temperature`, `humidity`.
-
-> فایل خام را در `data/raw/` قرار میگیره.  
-> فایل تمیز شده در `data/processed/`.
-
----
 
 ## معماری
 ```mermaid
