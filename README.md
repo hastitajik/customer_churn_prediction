@@ -20,6 +20,7 @@ B --> C[Python ETL & EDA]
 C --> D[Model Training & Forecasts]
 D --> B
 B --> E[Power BI Dashboards]
+```
 
 energy-optimization/
 ├─ data/
