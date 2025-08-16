@@ -24,6 +24,7 @@ B --> E[Power BI Dashboards]
 
 energy-optimization/
 ├─ data/
+
 │  ├─ raw/           # فایل خام مصرف انرژی
 │  ├─ processed/     # خروجی‌های تمیز SQL/Python
 ├─ sql/
