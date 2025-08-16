@@ -22,7 +22,7 @@ D --> B
 B --> E[Power BI Dashboards]
 ```
 
-(intro)
+```bash
 energy-optimization/
 ├─ data/
 │  ├─ raw/           # فایل خام مصرف انرژی
@@ -42,3 +42,4 @@ energy-optimization/
 ├─ powerbi/
 │  └─ dashboard.pbix
 ├─ README.md
+```
