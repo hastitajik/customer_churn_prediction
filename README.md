@@ -17,7 +17,7 @@ flowchart LR
   F --> G[Evaluate & Reports<br/>python/src/evaluate.py<br/>reports/figures]
   F --> H[Artifacts<br/>models/artifacts/*.pkl]
   H --> I[Inference<br/>python/src/inference.py]
-
+```
 
 
 
