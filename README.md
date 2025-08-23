@@ -1,15 +1,22 @@
+# Customer Churn Prediction (Telco) — SQL + Python
 
-# Home Energy Analytics — کاهش قبض برق با تحلیل داده‌
+## TL;DR
+پروژه پیش‌بینی **خروج مشتری (Churn)** برای شرکت مخابراتی فرضی. هدف: **شناسایی زودهنگام مشتریان در معرض خروج** تا تیم مارکتینگ بتواند کمپین نگهداشت اجرا کند. متریک اصلی: **PR-AUC** و **Recall@Top-k** به‌دلیل عدم‌توازن برچسب.
 
+---
 
-> تحلیل و پیش‌بینی مصرف برق خانگی با SQL + Python + Power BI
-> 
+## معماری پروژه
 
-پاکسازی داده‌ها و ساخت یک دیتابیس تمیز (SQL Server)
-
-تحلیل الگوها و شبیه‌سازی سناریوهای کاهش مصرف (Python)
-
-ساخت داشبورد مدیریتی با قابلیت تغییر پارامترها و دیدن اثر روی قبض برق (Power BI)
+```mermaid
+flowchart LR
+  A[CSV from Kaggle<br/>data/raw] --> B[SQL Staging<br/>staging.telco_raw]
+  B --> C[SQL Clean/View<br/>core.v_telco_ml]
+  C --> D[Python EDA<br/>notebooks/01_eda]
+  D --> E[Preprocess Pipeline<br/>python/src/data_prep.py]
+  E --> F[Model Train & Tune<br/>python/src/train.py]
+  F --> G[Evaluate & Reports<br/>python/src/evaluate.py<br/>reports/figures]
+  F --> H[Artifacts<br/>models/artifacts/*.pkl]
+  H --> I[Inference<br/>python/src/inference.py]
 
 
 
@@ -25,29 +32,6 @@ D --> B
 B --> E[Power BI Dashboards]
 ```
 
-```bash
-energy-optimization/
-├─ data/
-│  ├─ raw/           # فایل خام مصرف انرژی
-│  ├─ processed/     # خروجی‌های تمیز SQL/Python
-├─ sql/
-│  ├─ staging/       # کوئری‌های استیجینگ
-│  ├─ warehouse/     # مدل ستاره‌ای
-│  ├─ views/         # KPI Views
-├─ python/
-│  ├─ config.yaml    # مسیرها، پارامترها، تعرفه‌ها
-│  ├─ features.py    # ساخت فیچرها
-│  ├─ scenarios.py   # سناریوسازی کاهش مصرف
-├─ notebooks/
-│  ├─ 01_eda.ipynb   # تحلیل اکتشافی
-├─ reports/
-│  ├─ figures/       # نمودارها برای مقاله Medium
-├─ powerbi/
-│  └─ dashboard.pbix
-├─ README.md
-```
-
-```
 .
 customer_churn_prediction/
 ├─ data/
