@@ -19,19 +19,7 @@ flowchart LR
   H --> I[Inference<br/>python/src/inference.py]
 ```
 
-
-
-
-## معماری
-```mermaid
-flowchart LR
-A[Source CSV/Kaggle] --> B[(PostgreSQL)]
-B --> C[Python ETL & EDA]
-C --> D[Model Training & Forecasts]
-D --> B
-B --> E[Power BI Dashboards]
 ```
-
 .
 customer_churn_prediction/
 ├─ data/
