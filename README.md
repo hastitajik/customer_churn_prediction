@@ -24,7 +24,6 @@ flowchart LR
 customer_churn_prediction/
 ├─ data/
 │  ├─ raw/                       # CSV اصلی کگل (فقط read-only داخل گیت)
-│  ├─ interim/                   # خروجی‌های میانی پاک‌پذیر
 │  └─ processed/                 # دیتای تمیز نهایی برای مدل
 │
 ├─ sql/
