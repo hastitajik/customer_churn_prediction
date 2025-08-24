@@ -1,5 +1,20 @@
 # Customer Churn Prediction (Telco) — SQL + Python
 
+## Context
+
+"Predict behavior to retain customers. You can analyze all relevant customer data and develop focused customer retention programs." [IBM Sample Data Sets]
+
+## Content
+
+Each row represents a customer, each column contains customer’s attributes described on the column Metadata.
+
+## The data set includes information about:
+
+Customers who left within the last month – the column is called Churn
+Services that each customer has signed up for – phone, multiple lines, internet, online security, online backup, device protection, tech support, and streaming TV and movies
+Customer account information – how long they’ve been a customer, contract, payment method, paperless billing, monthly charges, and total charges
+Demographic info about customers – gender, age range, and if they have partners and dependents
+
 
 
 ---
@@ -22,7 +37,7 @@ flowchart LR
 .
 customer_churn_prediction/
 ├─ data/
-│  ├─ raw/                       # CSV اصلی کگل (فقط read-only داخل گیت)
+│  ├─ raw/                       # CSV اصلی کگل 
 │  └─ processed/                 # دیتای تمیز نهایی برای مدل
 │
 ├─ sql/
@@ -30,7 +45,7 @@ customer_churn_prediction/
 │  ├─ 01_create_tables.sql       # جداول staging/core
 │  ├─ 02_bulk_load_telco.sql     # BULK INSERT/OPENROWSET
 │  ├─ 03_profiling_checks.sql    # nulls, cardinality, label ratio
-│  └─ 99_views_features.sql      # (اختیاری) ویوهای آماده فیچر
+│  └─ 99_views_features.sql      # ویوهای آماده فیچر
 │
 ├─ python/
 │  ├─ notebooks/
