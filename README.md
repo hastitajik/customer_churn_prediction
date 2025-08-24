@@ -1,13 +1,10 @@
 # Customer Churn Prediction (Telco) — SQL + Python
 
-## TL;DR
-### پروژه پیش‌بینی **خروج مشتری (Churn)** برای شرکت مخابراتی فرضی. 
-### هدف: **شناسایی زودهنگام مشتریان در معرض خروج** تا تیم مارکتینگ بتواند کمپین نگهداشت اجرا کند. 
-### متریک اصلی: **PR-AUC** و **Recall@Top-k** به‌دلیل عدم‌توازن برچسب.
+
 
 ---
 
-## معماری پروژه
+## Project architecture
 
 ```mermaid
 flowchart LR
@@ -48,22 +45,11 @@ customer_churn_prediction/
 │     ├─ utils_io.py             # I/O و لاگ‌ها
 │     └─ paths.py                # مدیریت مسیرها از config.yaml
 │
-├─ models/
-│  ├─ artifacts/                 # pipeline.pkl, encoder.pkl, best_model.pkl
-│  └─ reports.json               # متریک‌ها/هایپرها (ماشین‌خوان)
-│
 ├─ reports/
 │  ├─ figures/                   # pr_curve.png, cm.png, shap.png
 │  ├─ summary.pdf                # گزارش یک‌صفحه‌ای
 │  └─ medium_assets/             # تصاویر مقاله
 │
-├─ scripts/
-│  ├─ run_all.bat                # برای ویندوز
-│  └─ run_all.sh                 # برای bash
-│
-├─ tests/
-│  ├─ test_data_prep.py          # تست حداقلی روی shape/nulls
-│  └─ test_train.py              # smoke-test روی یک اساب‌ست
 │
 └─ .github/
  
