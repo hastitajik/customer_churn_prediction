@@ -18,6 +18,11 @@ The raw data contains 7043 rows (customers) and 21 columns (features).
 * Customer account information – how long they’ve been a customer, contract, payment method, paperless billing, monthly charges, and total charges.
 * Demographic info about customers – gender, age range, and if they have partners and dependents.
 
+## We aim to build a predictive model:
+* Input = customer profile (age, contract tenure, services, monthly charges, …)
+* Output = probability that the customer will churn soon.
+
+
 
 ---
 
