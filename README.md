@@ -11,7 +11,7 @@
 Each row represents a customer, each column contains customer’s attributes described on the column Metadata.
 The raw data contains 7043 rows (customers) and 21 columns (features).
 
-### The data set includes information about:
+#### The data set includes information about:
 
 * Customers who left within the last month – the column is called Churn.
 * Services that each customer has signed up for – phone, multiple lines, internet, online security, online backup, device protection, tech support, and streaming TV and movies
@@ -23,7 +23,7 @@ The raw data contains 7043 rows (customers) and 21 columns (features).
 * Output = probability that the customer will churn soon.
 
 
-### Mini-Storyline :
+#### Mini-Storyline :
 Telecom companies often lose a portion of their customers (churn), and each lost customer means direct revenue loss. 
 We analyzed data from over 7,000 customers and found that short contract tenure, lack of additional services, and higher monthly charges are strongly correlated with churn. 
 Using machine learning models, we built a system that predicts a churn probability score for each customer. 
