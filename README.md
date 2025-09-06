@@ -6,7 +6,7 @@
 [IBM Sample Data Sets](https://www.kaggle.com/datasets/blastchar/telco-customer-churn)
 
 
-## Content dataset
+### Content dataset
 
 Each row represents a customer, each column contains customer’s attributes described on the column Metadata.
 The raw data contains 7043 rows (customers) and 21 columns (features).
@@ -21,6 +21,13 @@ The raw data contains 7043 rows (customers) and 21 columns (features).
 ## We aim to build a predictive model:
 * Input = customer profile (age, contract tenure, services, monthly charges, …)
 * Output = probability that the customer will churn soon.
+
+
+### Mini-Storyline
+Telecom companies often lose a portion of their customers (churn), and each lost customer means direct revenue loss. 
+We analyzed data from over 7,000 customers and found that short contract tenure, lack of additional services, and higher monthly charges are strongly correlated with churn. 
+Using machine learning models, we built a system that predicts a churn probability score for each customer. 
+This enables the company to proactively target high-risk customers with offers or support, ultimately improving customer retention and reducing losses.
 
 
 
