@@ -29,6 +29,16 @@ We analyzed data from over 7,000 customers and found that short contract tenure,
 Using machine learning models, we built a system that predicts a churn probability score for each customer. 
 This enables the company to proactively target high-risk customers with offers or support, ultimately improving customer retention and reducing losses.
 
+<a id = "4" ></a>
+#### <b> Objectives</b>
+I will explore the data and try to answer some questions like:
+* What's the % of Churn Customers and customers that keep in with the active services?
+* Is there any patterns in Churn Customers based on the gender?
+* Is there any patterns/preference in Churn Customers based on the type of service provided?
+* What's the most profitable service types?
+* Which features and services are most profitable?
+* Many more questions that will arise during the analysis
+<a id="objective"></a>
 
 
 ---
