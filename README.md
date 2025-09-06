@@ -2,7 +2,8 @@
 
 ## Context
 
-"Predict behavior to retain customers. You can analyze all relevant customer data and develop focused customer retention programs."[IBM Sample Data Sets](https://www.kaggle.com/datasets/blastchar/telco-customer-churn)
+"Predict behavior to retain customers. You can analyze all relevant customer data and develop focused customer retention programs."  
+[IBM Sample Data Sets](https://www.kaggle.com/datasets/blastchar/telco-customer-churn)
 
 
 ## Content dataset
