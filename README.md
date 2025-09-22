@@ -43,8 +43,7 @@ I will explore the data and try to answer some questions like:
 
 ```mermaid
 flowchart LR
-  A[CSV from Kaggle<br/>data/raw] --> B[SQL Staging<br/>staging.telco_raw]
-  B --> C[SQL Clean/View<br/>core.v_telco_ml]
+  B[SQL Staging<br/>staging.telco_raw] --> C[SQL Clean/View<br/>core.v_telco_ml]
   C --> D[Python EDA<br/>notebooks/01_eda]
   D --> E[Preprocess Pipeline<br/>python/src/data_prep.py]
   E --> F[Model Train & Tune<br/>python/src/train.py]
