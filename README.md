@@ -68,8 +68,8 @@ customer_churn_prediction/
 │
 ├─ python/
 │  ├─ notebooks/
-│  │  ├─ 01_eda.ipynb
-│  │  └─ 02_modeling.ipynb
+│  │  ├─ eda.ipynb
+│  │  └─ modeling.ipynb
 │  └─ src/
 │     ├─ __init__.py
 │     ├─ data_prep.py            # load/clean/split + ColumnTransformer
