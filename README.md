@@ -41,8 +41,6 @@ I will explore the data and try to answer some questions like:
 
 ## Project architecture
 
-## 🔄 Data Flow
-
 ```mermaid
 flowchart TD
     A[Raw Data (CSV)] --> B[Data Cleaning & Preparation]
@@ -52,12 +50,7 @@ flowchart TD
     E --> F[Prediction Outputs]
     F --> G[Reports & Medium Article]
 
-
-
-```mermaid
-
-
-```
+```markdown
 
 ```
 .
