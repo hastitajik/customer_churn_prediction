@@ -39,13 +39,12 @@ I will explore the data and try to answer some questions like:
 
 ---
 
-## Project architecture
 
 ---
 title: Project architecture
 ---
 flowchart LR
-    A["Raw Data (CSV)"] --> B[Data Cleaning & Preparation]
+    A[(Raw Data (CSV))] --> B[Data Cleaning & Preparation]
     B --> C[Exploratory Data Analysis (EDA)]
     C --> D[Modeling]
     D --> E[Evaluation]
