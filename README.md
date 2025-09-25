@@ -41,7 +41,7 @@ I will explore the data and try to answer some questions like:
 
 
 ---
-title: Project architecture
+ Project architecture
 ---
 flowchart LR
     A[(Raw Data (CSV))] --> B[Data Cleaning & Preparation]
@@ -51,7 +51,7 @@ flowchart LR
     E --> F[Prediction Outputs]
     F --> G[Reports & Medium Article]
 
-```
+
 
 
 ```
