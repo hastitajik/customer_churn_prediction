@@ -42,14 +42,14 @@ I will explore the data and try to answer some questions like:
 ## Project architecture
 
 ```mermaid
-flowchart LR
-  B[SQL Staging<br/>staging.telco_raw] --> C[SQL Clean/View<br/>core.v_telco_ml]
-  C --> D[Python EDA<br/>notebooks/01_eda]
-  D --> E[Preprocess Pipeline<br/>python/src/data_prep.py]
-  E --> F[Model Train & Tune<br/>python/src/train.py]
-  F --> G[Evaluate & Reports<br/>python/src/evaluate.py<br/>reports/figures]
-  F --> H[Artifacts<br/>models/artifacts/*.pkl]
-  H --> I[Inference<br/>python/src/inference.py]
+Raw Data (CSV) 
+   → Data Cleaning & Preparation 
+      → EDA 
+         → Modeling 
+            → Evaluation 
+               → Prediction Outputs 
+                  → Reports & Medium Article
+
 ```
 
 ```
