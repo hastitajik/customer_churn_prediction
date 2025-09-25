@@ -38,9 +38,6 @@ I will explore the data and try to answer some questions like:
 
 
 ---
-
-
----
  Project architecture
 ---
 ```mermaid
