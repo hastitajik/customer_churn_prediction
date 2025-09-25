@@ -43,6 +43,7 @@ I will explore the data and try to answer some questions like:
 ---
  Project architecture
 ---
+```
 flowchart LR
     A[(Raw Data (CSV))] --> B[Data Cleaning & Preparation]
     B --> C[Exploratory Data Analysis (EDA)]
@@ -50,7 +51,7 @@ flowchart LR
     D --> E[Evaluation]
     E --> F[Prediction Outputs]
     F --> G[Reports & Medium Article]
-
+```
 
 
 
