@@ -43,6 +43,14 @@ I will explore the data and try to answer some questions like:
 
 ```mermaid
 
+flowchart TD
+    A[Raw Data (CSV)] --> B[Data Cleaning & Preparation]
+    B --> C[Exploratory Data Analysis (EDA)]
+    C --> D[Modeling]
+    D --> E[Evaluation]
+    E --> F[Prediction Outputs]
+    F --> G[Reports & Medium Article]
+
 ```
 
 ```
