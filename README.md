@@ -52,6 +52,10 @@ flowchart TD
 
 ```markdown
 
+![Architecture Diagram](reports/figures/architecture.png)
+
+
+
 ```
 .
 customer_churn_prediction/
